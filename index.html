@@ -113,7 +113,7 @@
   const pad = (n) => String(n).padStart(2,'0');
   
   const coverPath = (id) => `covers/${pad(id)}.jpg`;
-  const songPath  = (id) => `songs/${pad(id)}.mp3`;
+  const songPath  = (id) => `${pad(id)}.mp3`;
 
   function renderCarousel(){
     carousel.innerHTML = '';
